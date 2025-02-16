@@ -1,0 +1,17 @@
+{
+    "name": "puleeno/smart-form",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Puleeno\\SmartForm\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Puleeno Nguyen",
+            "email": "puleeno@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
