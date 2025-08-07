@@ -10,6 +10,7 @@ namespace Formello\TagReplacers;
 use Formello\TagReplacers\Fields;
 use Formello\TagReplacers\Other;
 use Formello\TagReplacers\Wp;
+use function PHPUnit\Framework\returnArgument;
 
 /**
  * Class Replacer
@@ -49,6 +50,9 @@ class Replacer {
 	 * @param string $template The template variable.
 	 */
 	public function parse( $template ) {
+		if (is_null($template)) {
+			return '';
+		}
 		$pattern = '/\{\{ *(\w+)(?:\.([\w-]+))? *(?:\|\| *(\w+))? *\}\}/i';
 
 		$result = preg_replace_callback( $pattern, array( $this, 'get_data' ), $template );
