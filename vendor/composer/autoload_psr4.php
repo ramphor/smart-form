@@ -6,5 +6,9 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Puleeno\\SmartForm\\' => array($baseDir . '/src'),
+    'Rakit\\Validation\\' => array($vendorDir . '/rakit/validation/src'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
+    'Katzgrau\\KLogger\\' => array($vendorDir . '/katzgrau/klogger/src'),
+    'Formello\\' => array($baseDir . '/includes'),
+    'Appsero\\' => array($vendorDir . '/appsero/client/src'),
 );

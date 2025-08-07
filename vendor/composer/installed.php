@@ -1,0 +1,65 @@
+<?php return array(
+    'root' => array(
+        'name' => 'formello/forms',
+        'pretty_version' => '2.7.1',
+        'version' => '2.7.1.0',
+        'reference' => '73335493ac806b47768bb3c04beee64d3903c49c',
+        'type' => 'wordpress-plugin',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => false,
+    ),
+    'versions' => array(
+        'appsero/client' => array(
+            'pretty_version' => 'dev-develop',
+            'version' => 'dev-develop',
+            'reference' => 'aef4cf138ab4f348cee4e2f20f7d3cd815db0877',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../appsero/client',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'dev_requirement' => false,
+        ),
+        'formello/forms' => array(
+            'pretty_version' => '2.7.1',
+            'version' => '2.7.1.0',
+            'reference' => '73335493ac806b47768bb3c04beee64d3903c49c',
+            'type' => 'wordpress-plugin',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'katzgrau/klogger' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '36481c69db9305169a2ceadead25c2acaabd567c',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../katzgrau/klogger',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'dev_requirement' => false,
+        ),
+        'psr/log' => array(
+            'pretty_version' => '1.1.4',
+            'version' => '1.1.4.0',
+            'reference' => 'd49695b909c3b7628b6289db5479a1c204601f11',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/log',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'rakit/validation' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => 'ff003a35cdf5030a5f2482299f4c93f344a35b29',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../rakit/validation',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'dev_requirement' => false,
+        ),
+    ),
+);

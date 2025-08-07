@@ -1,0 +1,35 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/wp-admin/post.php?post=6&action=edit",
+	"preferredVersions": {
+		"php": "8.0",
+		"wp": "latest"
+	},
+	"login": true,
+	"features": {
+		"networking": true
+	},
+	"steps": [
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "formello"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "importWxr",
+			"file": {
+				"resource": "url",
+				"url": "https://github.com/formello-forms/formello/blob/master/.playground/demo-content.xml"
+			}
+		},
+		{
+			"step": "login",
+			"username": "admin"
+		}
+	]
+}

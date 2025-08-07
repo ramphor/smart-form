@@ -4,32 +4,170 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc264db18541216af26b7179f8f28c4ce
+class ComposerStaticInitce7f399611c994667cace0245c7ac932
 {
     public static $prefixLengthsPsr4 = array (
+        'R' => 
+        array (
+            'Rakit\\Validation\\' => 17,
+        ),
         'P' => 
         array (
-            'Puleeno\\SmartForm\\' => 18,
+            'Psr\\Log\\' => 8,
+        ),
+        'K' => 
+        array (
+            'Katzgrau\\KLogger\\' => 17,
+        ),
+        'F' => 
+        array (
+            'Formello\\' => 9,
+        ),
+        'A' => 
+        array (
+            'Appsero\\' => 8,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Puleeno\\SmartForm\\' => 
+        'Rakit\\Validation\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/..' . '/rakit/validation/src',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Katzgrau\\KLogger\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/katzgrau/klogger/src',
+        ),
+        'Formello\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/includes',
+        ),
+        'Appsero\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/appsero/client/src',
         ),
     );
 
     public static $classMap = array (
+        'Appsero\\Client' => __DIR__ . '/..' . '/appsero/client/src/Client.php',
+        'Appsero\\Insights' => __DIR__ . '/..' . '/appsero/client/src/Insights.php',
+        'Appsero\\License' => __DIR__ . '/..' . '/appsero/client/src/License.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Formello\\Actions\\Action' => __DIR__ . '/../..' . '/includes/Actions/Action.php',
+        'Formello\\Actions\\Email' => __DIR__ . '/../..' . '/includes/Actions/Email.php',
+        'Formello\\Activator' => __DIR__ . '/../..' . '/includes/Activator.php',
+        'Formello\\Admin' => __DIR__ . '/../..' . '/includes/Admin.php',
+        'Formello\\Blocks' => __DIR__ . '/../..' . '/includes/Blocks.php',
+        'Formello\\Cron' => __DIR__ . '/../..' . '/includes/Cron.php',
+        'Formello\\Deactivator' => __DIR__ . '/../..' . '/includes/Deactivator.php',
+        'Formello\\Frontend' => __DIR__ . '/../..' . '/includes/Frontend.php',
+        'Formello\\I18n' => __DIR__ . '/../..' . '/includes/I18n.php',
+        'Formello\\Loader' => __DIR__ . '/../..' . '/includes/Loader.php',
+        'Formello\\Log' => __DIR__ . '/../..' . '/includes/Log.php',
+        'Formello\\Plugin' => __DIR__ . '/../..' . '/includes/Plugin.php',
+        'Formello\\Processor\\Form' => __DIR__ . '/../..' . '/includes/Processor/Form.php',
+        'Formello\\Processor\\Validator' => __DIR__ . '/../..' . '/includes/Processor/Validator.php',
+        'Formello\\Rest\\Addons' => __DIR__ . '/../..' . '/includes/Rest/Addons.php',
+        'Formello\\Rest\\Base' => __DIR__ . '/../..' . '/includes/Rest/Base.php',
+        'Formello\\Rest\\Columns' => __DIR__ . '/../..' . '/includes/Rest/Columns.php',
+        'Formello\\Rest\\Importer' => __DIR__ . '/../..' . '/includes/Rest/Importer.php',
+        'Formello\\Rest\\License' => __DIR__ . '/../..' . '/includes/Rest/License.php',
+        'Formello\\Rest\\Settings' => __DIR__ . '/../..' . '/includes/Rest/Settings.php',
+        'Formello\\Rest\\Submissions' => __DIR__ . '/../..' . '/includes/Rest/Submissions.php',
+        'Formello\\TagReplacers\\Fields' => __DIR__ . '/../..' . '/includes/TagReplacers/Fields.php',
+        'Formello\\TagReplacers\\Meta' => __DIR__ . '/../..' . '/includes/TagReplacers/Meta.php',
+        'Formello\\TagReplacers\\Other' => __DIR__ . '/../..' . '/includes/TagReplacers/Other.php',
+        'Formello\\TagReplacers\\Replacer' => __DIR__ . '/../..' . '/includes/TagReplacers/Replacer.php',
+        'Formello\\TagReplacers\\Wp' => __DIR__ . '/../..' . '/includes/TagReplacers/Wp.php',
+        'Formello\\Utils\\Encryption' => __DIR__ . '/../..' . '/includes/Utils/Encryption.php',
+        'Formello\\Utils\\Formatter' => __DIR__ . '/../..' . '/includes/Utils/Formatter.php',
+        'Formello\\Validators\\MaxLengthRule' => __DIR__ . '/../..' . '/includes/Validators/MaxLengthRule.php',
+        'Formello\\Validators\\MinLengthRule' => __DIR__ . '/../..' . '/includes/Validators/MinLengthRule.php',
+        'Katzgrau\\KLogger\\Logger' => __DIR__ . '/..' . '/katzgrau/klogger/src/Logger.php',
+        'Psr\\Log\\AbstractLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/AbstractLogger.php',
+        'Psr\\Log\\InvalidArgumentException' => __DIR__ . '/..' . '/psr/log/Psr/Log/InvalidArgumentException.php',
+        'Psr\\Log\\LogLevel' => __DIR__ . '/..' . '/psr/log/Psr/Log/LogLevel.php',
+        'Psr\\Log\\LoggerAwareInterface' => __DIR__ . '/..' . '/psr/log/Psr/Log/LoggerAwareInterface.php',
+        'Psr\\Log\\LoggerAwareTrait' => __DIR__ . '/..' . '/psr/log/Psr/Log/LoggerAwareTrait.php',
+        'Psr\\Log\\LoggerInterface' => __DIR__ . '/..' . '/psr/log/Psr/Log/LoggerInterface.php',
+        'Psr\\Log\\LoggerTrait' => __DIR__ . '/..' . '/psr/log/Psr/Log/LoggerTrait.php',
+        'Psr\\Log\\NullLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/NullLogger.php',
+        'Psr\\Log\\Test\\DummyTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/DummyTest.php',
+        'Psr\\Log\\Test\\LoggerInterfaceTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
+        'Psr\\Log\\Test\\TestLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/TestLogger.php',
+        'Rakit\\Validation\\Attribute' => __DIR__ . '/..' . '/rakit/validation/src/Attribute.php',
+        'Rakit\\Validation\\ErrorBag' => __DIR__ . '/..' . '/rakit/validation/src/ErrorBag.php',
+        'Rakit\\Validation\\Helper' => __DIR__ . '/..' . '/rakit/validation/src/Helper.php',
+        'Rakit\\Validation\\MimeTypeGuesser' => __DIR__ . '/..' . '/rakit/validation/src/MimeTypeGuesser.php',
+        'Rakit\\Validation\\MissingRequiredParameterException' => __DIR__ . '/..' . '/rakit/validation/src/MissingRequiredParameterException.php',
+        'Rakit\\Validation\\Rule' => __DIR__ . '/..' . '/rakit/validation/src/Rule.php',
+        'Rakit\\Validation\\RuleNotFoundException' => __DIR__ . '/..' . '/rakit/validation/src/RuleNotFoundException.php',
+        'Rakit\\Validation\\RuleQuashException' => __DIR__ . '/..' . '/rakit/validation/src/RuleQuashException.php',
+        'Rakit\\Validation\\Rules\\Accepted' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Accepted.php',
+        'Rakit\\Validation\\Rules\\After' => __DIR__ . '/..' . '/rakit/validation/src/Rules/After.php',
+        'Rakit\\Validation\\Rules\\Alpha' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Alpha.php',
+        'Rakit\\Validation\\Rules\\AlphaDash' => __DIR__ . '/..' . '/rakit/validation/src/Rules/AlphaDash.php',
+        'Rakit\\Validation\\Rules\\AlphaNum' => __DIR__ . '/..' . '/rakit/validation/src/Rules/AlphaNum.php',
+        'Rakit\\Validation\\Rules\\AlphaSpaces' => __DIR__ . '/..' . '/rakit/validation/src/Rules/AlphaSpaces.php',
+        'Rakit\\Validation\\Rules\\Before' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Before.php',
+        'Rakit\\Validation\\Rules\\Between' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Between.php',
+        'Rakit\\Validation\\Rules\\Boolean' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Boolean.php',
+        'Rakit\\Validation\\Rules\\Callback' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Callback.php',
+        'Rakit\\Validation\\Rules\\Date' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Date.php',
+        'Rakit\\Validation\\Rules\\Defaults' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Defaults.php',
+        'Rakit\\Validation\\Rules\\Different' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Different.php',
+        'Rakit\\Validation\\Rules\\Digits' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Digits.php',
+        'Rakit\\Validation\\Rules\\DigitsBetween' => __DIR__ . '/..' . '/rakit/validation/src/Rules/DigitsBetween.php',
+        'Rakit\\Validation\\Rules\\Email' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Email.php',
+        'Rakit\\Validation\\Rules\\Extension' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Extension.php',
+        'Rakit\\Validation\\Rules\\In' => __DIR__ . '/..' . '/rakit/validation/src/Rules/In.php',
+        'Rakit\\Validation\\Rules\\Integer' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Integer.php',
+        'Rakit\\Validation\\Rules\\Interfaces\\BeforeValidate' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Interfaces/BeforeValidate.php',
+        'Rakit\\Validation\\Rules\\Interfaces\\ModifyValue' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Interfaces/ModifyValue.php',
+        'Rakit\\Validation\\Rules\\Ip' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Ip.php',
+        'Rakit\\Validation\\Rules\\Ipv4' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Ipv4.php',
+        'Rakit\\Validation\\Rules\\Ipv6' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Ipv6.php',
+        'Rakit\\Validation\\Rules\\Json' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Json.php',
+        'Rakit\\Validation\\Rules\\Lowercase' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Lowercase.php',
+        'Rakit\\Validation\\Rules\\Max' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Max.php',
+        'Rakit\\Validation\\Rules\\Mimes' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Mimes.php',
+        'Rakit\\Validation\\Rules\\Min' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Min.php',
+        'Rakit\\Validation\\Rules\\NotIn' => __DIR__ . '/..' . '/rakit/validation/src/Rules/NotIn.php',
+        'Rakit\\Validation\\Rules\\Nullable' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Nullable.php',
+        'Rakit\\Validation\\Rules\\Numeric' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Numeric.php',
+        'Rakit\\Validation\\Rules\\Present' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Present.php',
+        'Rakit\\Validation\\Rules\\Regex' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Regex.php',
+        'Rakit\\Validation\\Rules\\Required' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Required.php',
+        'Rakit\\Validation\\Rules\\RequiredIf' => __DIR__ . '/..' . '/rakit/validation/src/Rules/RequiredIf.php',
+        'Rakit\\Validation\\Rules\\RequiredUnless' => __DIR__ . '/..' . '/rakit/validation/src/Rules/RequiredUnless.php',
+        'Rakit\\Validation\\Rules\\RequiredWith' => __DIR__ . '/..' . '/rakit/validation/src/Rules/RequiredWith.php',
+        'Rakit\\Validation\\Rules\\RequiredWithAll' => __DIR__ . '/..' . '/rakit/validation/src/Rules/RequiredWithAll.php',
+        'Rakit\\Validation\\Rules\\RequiredWithout' => __DIR__ . '/..' . '/rakit/validation/src/Rules/RequiredWithout.php',
+        'Rakit\\Validation\\Rules\\RequiredWithoutAll' => __DIR__ . '/..' . '/rakit/validation/src/Rules/RequiredWithoutAll.php',
+        'Rakit\\Validation\\Rules\\Same' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Same.php',
+        'Rakit\\Validation\\Rules\\Traits\\DateUtilsTrait' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Traits/DateUtilsTrait.php',
+        'Rakit\\Validation\\Rules\\Traits\\FileTrait' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Traits/FileTrait.php',
+        'Rakit\\Validation\\Rules\\Traits\\SizeTrait' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Traits/SizeTrait.php',
+        'Rakit\\Validation\\Rules\\TypeArray' => __DIR__ . '/..' . '/rakit/validation/src/Rules/TypeArray.php',
+        'Rakit\\Validation\\Rules\\UploadedFile' => __DIR__ . '/..' . '/rakit/validation/src/Rules/UploadedFile.php',
+        'Rakit\\Validation\\Rules\\Uppercase' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Uppercase.php',
+        'Rakit\\Validation\\Rules\\Url' => __DIR__ . '/..' . '/rakit/validation/src/Rules/Url.php',
+        'Rakit\\Validation\\Traits\\MessagesTrait' => __DIR__ . '/..' . '/rakit/validation/src/Traits/MessagesTrait.php',
+        'Rakit\\Validation\\Traits\\TranslationsTrait' => __DIR__ . '/..' . '/rakit/validation/src/Traits/TranslationsTrait.php',
+        'Rakit\\Validation\\Validation' => __DIR__ . '/..' . '/rakit/validation/src/Validation.php',
+        'Rakit\\Validation\\Validator' => __DIR__ . '/..' . '/rakit/validation/src/Validator.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc264db18541216af26b7179f8f28c4ce::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc264db18541216af26b7179f8f28c4ce::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitc264db18541216af26b7179f8f28c4ce::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitce7f399611c994667cace0245c7ac932::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitce7f399611c994667cace0245c7ac932::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitce7f399611c994667cace0245c7ac932::$classMap;
 
         }, null, ClassLoader::class);
     }
